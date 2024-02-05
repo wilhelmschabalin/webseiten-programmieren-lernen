@@ -1,5 +1,7 @@
 # Hier sind ein paar Aufgaben
-Die hochgeladenen Dateien beinhalten die Lösungen. Wie die Variablen, Funktionen, IDs etc. heißen, ist egal.
+Die hochgeladenen Dateien beinhalten die Lösungen. 
+
+>Wie die Variablen, Funktionen, IDs etc. heißen, ist egal.
 
 Ein paar Tipps:
 -  [w3schools](https://www.w3schools.com/) bzw [Mozilla Web Docs](https://developer.mozilla.org/en-US/)

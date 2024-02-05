@@ -2,7 +2,7 @@
 Die hochgeladenen Dateien beinhalten die Lösungen. Wie die Variablen, Funktionen, IDs etc. heißen, ist egal.
 
 Ein paar Tipps:
--  (w3schools)[https://www.w3schools.com/] bzw (Mozilla Web Docs)[https://developer.mozilla.org/en-US/]
+-  [w3schools](https://www.w3schools.com/) bzw [Mozilla Web Docs](https://developer.mozilla.org/en-US/)
 -  ChatGPT (!!!) (_NICHT DEN CODE KOPIEREN, SELBST SCHREIBEN, SELBST WENN DER CODE VERSTÄNDLICH IST_)
 -  nicht aufgeben
 

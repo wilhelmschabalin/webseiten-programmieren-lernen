@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: 5px;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 70px;
+        }
+        button {
+            padding: 20px;
+            background-color: grey;
+            border-radius: 10px;
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="doSomething()">Klick mich du Maus</button>
+
+    <p id="test">  </p>
+
+    <script>
+        function doSomething() {
+            document.getElementById("test").innerHTML = "Hallo meine Mädchen ich hab es geschafft"
+        }
+        </script>
+    
+    
+</body>
+</html>

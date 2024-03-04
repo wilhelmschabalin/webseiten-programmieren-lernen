@@ -37,7 +37,7 @@ body {
 #numpad-wrapper {
     height: 50vh;
     display: grid;
-    grid-template-columns: repeat(3, minmax(10px, 2000px));
+    grid-template-columns: repeat(4, minmax(10px, 2000px));
     grid-template-rows: repeat(4, minmax(10px, 2000px));
     grid-gap: 20px;
     padding: 20px;
@@ -54,10 +54,22 @@ button {
     font-size: 3vh;
 }
 
-#last-button {
-    grid-column: 2;
+.first-row {
+    grid-row: 1;
 }
 
-#clear {
-    grid-column: 3;
+.second-row {
+    grid-row: 2;
+}
+
+.third-row {
+    grid-row: 3;
+}
+
+.fourth-row {
+    grid-row: 4;
+}
+
+.operator {
+    grid-column: 4;
 }

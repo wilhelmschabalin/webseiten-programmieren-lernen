@@ -19,37 +19,46 @@
 
   </div>
   <div id="numpad-wrapper">
-    <button onclick="displaySeven()">
+    <button class="first-row" onclick="display(7)">
       7
     </button>
-    <button onclick="displayEight()">
+    <button class="first-row" onclick="display(8)">
       8
     </button>
-    <button onclick="displayNine()">
+    <button class="first-row" onclick="display(9)">
       9
     </button>
-    <button onclick="displayFour()">
+    <button class="second-row" onclick="display(4)">
       4
     </button>
-    <button onclick="displayFive()">
+    <button class="second-row" onclick="display(5)">
       5
     </button>
-    <button onclick="displaySix()">
+    <button class="second-row" onclick="display(6)">
       6
     </button>
-    <button onclick="displayOne()">
+    <button class="third-row" onclick="display(1)">
       1
     </button>
-    <button onclick="displayTwo()">
+    <button class="third-row" onclick="display(2)">
       2
     </button>
-    <button onclick="displayThree()">
+    <button class="third-row" onclick="display(3)">
       3
     </button>
-    <button id="last-button" onclick="displayZero()">
+    <button class="fourth-row" onclick="display(0)">
       0
     </button>
-    <button id="clear" onclick="clearDisplay()">
+    <button class="fourth-row" onclick="display('.')">
+      .
+    </button>
+    <button class="operator" onclick="display('+')">
+      +
+    </button>
+    <button class="operator" onclick="display('*')">
+      *
+    </button>
+    <button class="operator" onclick="clearDisplay()">
       CLEAR
     </button>
   </div>

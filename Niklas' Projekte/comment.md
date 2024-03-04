@@ -45,6 +45,7 @@ Man soltte Elementen nur `wrapper` in der ID oder Klasse geben, wenn sie andere 
 
 Letzendlich ist es aber jedem selbst überlassen.
 
+**Respekt, dass du `grid` benutzt hast :+1:**
 
 ---
 Bin gespannt, wie es weitergeht 💯 

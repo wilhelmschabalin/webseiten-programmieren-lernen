@@ -2,6 +2,8 @@
 
 Sieht maga cool aus, besonders die UI, aber man kann ein paar Sachen vereinfachen:
 
+`script.js`:
+
 ```js
 function display(content) {
     const displayWrapper = document.getElementById("display-wrapper");

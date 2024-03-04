@@ -36,7 +36,7 @@ So sieht der HTML-Teil aus:
 ...
 ```
 
-> *Kleiner Tipp:* Was in den Anführungszeichen des `onclick`-Attributs steht, ist Javascript-Code. D.h. hier könnte ein ganzer Algorithmus stehen (macht man aber nicht, weil das unlesbar ist...) - In unserem ist wichtig zu verstehen, dass wir so Argumente an die parameterbehaftete Methode `display(content)` übergeben können.
+> *Kleiner Tipp:* Was in den Anführungszeichen des `onclick`-Attributs steht, ist Javascript-Code. D.h. hier könnte ein ganzer Algorithmus stehen (macht man aber nicht, weil das unlesbar ist...) - In unserem Fall ist wichtig zu verstehen, dass wir so Argumente an die parameterbehaftete Methode `display(content)` übergeben können.
 
 Zu `display-wrapper`:
 Man soltte Elementen nur `wrapper` in der ID oder Klasse geben, wenn sie andere Elemente (children) beinhalten. In diesem Fall beinhaltet das Element jedoch lediglich Text, also würde `id="display"` genügen (*finde ich*).

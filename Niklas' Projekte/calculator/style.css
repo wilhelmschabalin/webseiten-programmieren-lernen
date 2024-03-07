@@ -11,7 +11,7 @@ body {
 }
 
 #title-wrapper {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ body {
 }
 
 #display-wrapper {
-    height: 30vh;
+    height: 25vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -32,7 +32,35 @@ body {
     color: white;
     font-family: Courier New;
     font-size: 10vh;
+}
+
+#status-wrapper {
+    height: 10vh;
+    background-color: grey;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Courier New;
+    font-size: 5vh;
+}
+
+#red {
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+#green {
+    height: 100%;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
 }
 
 #numpad-wrapper {

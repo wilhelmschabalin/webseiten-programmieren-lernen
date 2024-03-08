@@ -1,0 +1,2 @@
+This project is formatted using the [*Prettier*](https://prettier.io/) format.
+The reason for this is that [mdn web docs uses the same format](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript).

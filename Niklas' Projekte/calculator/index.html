@@ -1,77 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-
-<body>
-  <div id="title-wrapper">
-    <div id="title">
-      Calculator
+  <body>
+    <div id="title-wrapper">
+      <div id="title">Calculator</div>
     </div>
-  </div>
-  <div id="display-wrapper">
-
-  </div>
-  <div id="status-wrapper">
-    status : 
-    <div id="red">
+    <div id="display-wrapper"></div>
+    <div id="status-wrapper">
+      status :
+      <div id="red"></div>
+      <div id="green"></div>
     </div>
-    <div id="green">
+    <div id="numpad-wrapper">
+      <button class="first-row" onclick="display(7)">7</button>
+      <button class="first-row" onclick="display(8)">8</button>
+      <button class="first-row" onclick="display(9)">9</button>
+      <button class="second-row" onclick="display(4)">4</button>
+      <button class="second-row" onclick="display(5)">5</button>
+      <button class="second-row" onclick="display(6)">6</button>
+      <button class="third-row" onclick="display(1)">1</button>
+      <button class="third-row" onclick="display(2)">2</button>
+      <button class="third-row" onclick="display(3)">3</button>
+      <button class="fourth-row" onclick="display(0)">0</button>
+      <button class="fourth-row" onclick="display('.')">.</button>
+      <button class="fourth-row" onclick="calculateResult()">=</button>
+      <button
+        class="fourth-row"
+        id="testOperator"
+        onclick="testOperator()"
+      ></button>
+      <button class="operator" onclick="display('+')">+</button>
+      <button class="operator" onclick="display('*')">*</button>
+      <button class="operator" onclick="clearDisplay()">CLEAR</button>
     </div>
-  </div>
-  <div id="numpad-wrapper">
-    <button class="first-row" onclick="display(7)">
-      7
-    </button>
-    <button class="first-row" onclick="display(8)">
-      8
-    </button>
-    <button class="first-row" onclick="display(9)">
-      9
-    </button>
-    <button class="second-row" onclick="display(4)">
-      4
-    </button>
-    <button class="second-row" onclick="display(5)">
-      5
-    </button>
-    <button class="second-row" onclick="display(6)">
-      6
-    </button>
-    <button class="third-row" onclick="display(1)">
-      1
-    </button>
-    <button class="third-row" onclick="display(2)">
-      2
-    </button>
-    <button class="third-row" onclick="display(3)">
-      3
-    </button>
-    <button class="fourth-row" onclick="display(0)">
-      0
-    </button>
-    <button class="fourth-row" onclick="display('.')">
-      .
-    </button>
-    <button class="fourth-row" onclick="calculate()">
-      =
-    </button>
-    <button class="operator" onclick="display('+')">
-      +
-    </button>
-    <button class="operator" onclick="display('*')">
-      *
-    </button>
-    <button class="operator" onclick="clearDisplay()">
-      CLEAR
-    </button>
-  </div>
-</body>
-
+  </body>
 </html>

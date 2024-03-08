@@ -1,74 +1,82 @@
-let prohib = ['+', '*', '=']
-let solved = false
-let solution = ""
+let prohib = [".", "+", "*", "="];
+let solved = false;
+let solution = null;
+let operator = null;
 
-function statuss() {
-    if (solved == false) {
-        document.getElementById("red").innerHTML = "running"
-        document.getElementById("green").innerHTML = ""
-    } else {
-        document.getElementById("green").innerHTML = "complete"
-        document.getElementById("red").innerHTML = ""
-    }
+function showStatus() {
+  if (solved == false) {
+    document.getElementById("red").innerHTML = "running";
+    document.getElementById("green").innerHTML = "";
+  } else {
+    document.getElementById("green").innerHTML = "complete";
+    document.getElementById("red").innerHTML = "";
+  }
 }
-
-// display(content) shows whatever is entered.
 
 function display(content) {
-    const displayWrapper = document.getElementById("display-wrapper")
-
-    statuss()
-
-    if (solved == true) { // If the last process is solved and a button is pressed, the screen resets and the new process counts as not solved.
-        displayWrapper.innerHTML = ""
-        solved = false
+  const displayWrapper = document.getElementById("display-wrapper");
+  showStatus();
+  if (solved == true) {
+    // resets the screen after a process counts as solved
+    displayWrapper.innerHTML = "";
+    solved = false;
+  }
+  if (content === "") {
+    displayWrapper.innerHTML = "";
+  } else if (
+    prohib.includes(content) &&
+    prohib.includes(displayWrapper.innerHTML.slice(-1))
+  ) {
+    // No two operators or commas can be placed in a row.
+  } else {
+    displayWrapper.innerHTML += content;
+    solution += content;
+    if (content == "+" || content == "*") {
+      saveOperator(content);
     }
-
-    if (content == "") { // If the function is called with no parameter passed, nothing is displayed.
-        displayWrapper.innerHTML = ""
-    } else if (prohib.includes(content) && prohib.includes(displayWrapper.innerHTML.slice(-1))) { // If two operators are placed in a row, nothing will happen.
-
-    } else {
-        displayWrapper.innerHTML += content
-        solution += content
-    }
-
-    statuss()
+  }
+  showStatus();
 }
 
-// clearDisplay() empties the display-wrapper.
+function saveOperator(input) {
+  operator = input;
+}
+
+function calculateResult() {
+  const displayWrapper = document.getElementById("display-wrapper");
+  showStatus();
+  if (
+    prohib.includes(displayWrapper.innerHTML.slice(-1)) ||
+    prohib.includes(displayWrapper.innerHTML.slice(0, 1))
+  ) {
+    // throws a syntax error if the expression starts or ends with an operator or comma
+    document.getElementById("display-wrapper").innerHTML = "syntax error";
+    endProcess();
+  } else if (displayWrapper.innerHTML == "syntax error") {
+    // prevents a solution from being displayed after a syntax error
+  } else if (solution == null) {
+    // If no solution could be calculated, nothing happens.
+  } else {
+    // Else, the solution is displayed and the process counts as solved.
+    document.getElementById("display-wrapper").innerHTML = "'" + solution + "'";
+    endProcess();
+  }
+  showStatus();
+}
 
 function clearDisplay() {
-
-    statuss()
-
-    document.getElementById("display-wrapper").innerHTML = ""
-    solution = ""
-    solved = true
-
-    statuss()
+  showStatus();
+  document.getElementById("display-wrapper").innerHTML = "";
+  endProcess();
+  showStatus();
 }
 
-// calculate() checks if the input is valid and, if so, calculates the result.
+function endProcess() {
+  solved = true;
+  solution = null;
+  operator = null;
+}
 
-function calculate() {
-    const displayWrapper = document.getElementById("display-wrapper")
-
-    statuss()
-
-    if (prohib.includes(displayWrapper.innerHTML.slice(-1)) || prohib.includes(displayWrapper.innerHTML.slice(0, 1))) { // If the expression starts or ends with an operator, a syntax error is thrown.
-        document.getElementById("display-wrapper").innerHTML = "syntax error"
-        solved = true
-        solution = ""
-    } else if (displayWrapper.innerHTML == "syntax error") { // If there is already a syntax error present, pressing the "=" button should not show a solution.
-
-    } else if (solution == "") { // If no solution could be calculated, nothing happens.
-
-    } else { // Else, the solution is displayed and the process counts as solved.
-        document.getElementById("display-wrapper").innerHTML = "'" + solution + "'"
-        solved = true
-        solution = ""
-    }
-
-    statuss()
+function testOperator() {
+  document.getElementById("testOperator").innerHTML = operator;
 }

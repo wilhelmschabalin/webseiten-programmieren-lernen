@@ -1,6 +1,6 @@
 let prohib = [".", "+", "*", "="];
 let solved = false;
-let solution = null;
+let solution = "";
 let operator = null;
 
 function showStatus() {
@@ -54,7 +54,7 @@ function calculateResult() {
     endProcess();
   } else if (displayWrapper.innerHTML == "syntax error") {
     // prevents a solution from being displayed after a syntax error
-  } else if (solution == null) {
+  } else if (solution == "") {
     // If no solution could be calculated, nothing happens.
   } else {
     // Else, the solution is displayed and the process counts as solved.
@@ -73,7 +73,7 @@ function clearDisplay() {
 
 function endProcess() {
   solved = true;
-  solution = null;
+  solution = "";
   operator = null;
 }
 

@@ -84,7 +84,3 @@ function endProcess() {
   solution = "";
   operator = null;
 }
-
-function testOperator() {
-  document.getElementById("testOperator").innerHTML = operator;
-}

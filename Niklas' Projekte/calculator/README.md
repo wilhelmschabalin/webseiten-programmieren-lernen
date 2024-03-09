@@ -1,0 +1,3 @@
+This project is formatted using the [_Prettier_](https://prettier.io/) format.
+The reason for this is that [mdn web docs uses the same format](<https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript#:~:text=On%20MDN%20Web%20Docs%2C%20we%20use%20Prettier%20as%20a%20code%20formatter%20to%20keep%20the%20code%20style%20consistent%20(and%20to%20avoid%20off%2Dtopic%20discussions).>).
+Although easy to use, Prettier proves inadequate in certain aspects. Therefore, future proposals for other formats will be reviewed thoroughly.

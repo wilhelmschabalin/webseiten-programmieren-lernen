@@ -19,25 +19,25 @@
       <div id="green"></div>
     </div>
     <div id="numpad-wrapper">
-      <button class="first-row" onclick="display(7)">7</button>
-      <button class="first-row" onclick="display(8)">8</button>
-      <button class="first-row" onclick="display(9)">9</button>
-      <button class="second-row" onclick="display(4)">4</button>
-      <button class="second-row" onclick="display(5)">5</button>
-      <button class="second-row" onclick="display(6)">6</button>
-      <button class="third-row" onclick="display(1)">1</button>
-      <button class="third-row" onclick="display(2)">2</button>
-      <button class="third-row" onclick="display(3)">3</button>
-      <button class="fourth-row" onclick="display(0)">0</button>
-      <button class="fourth-row" onclick="display('.')">.</button>
-      <button class="fourth-row" onclick="calculateResult()">=</button>
+      <button class="first-row" onclick="clickButton(7)">7</button>
+      <button class="first-row" onclick="clickButton(8)">8</button>
+      <button class="first-row" onclick="clickButton(9)">9</button>
+      <button class="second-row" onclick="clickButton(4)">4</button>
+      <button class="second-row" onclick="clickButton(5)">5</button>
+      <button class="second-row" onclick="clickButton(6)">6</button>
+      <button class="third-row" onclick="clickButton(1)">1</button>
+      <button class="third-row" onclick="clickButton(2)">2</button>
+      <button class="third-row" onclick="clickButton(3)">3</button>
+      <button class="fourth-row" onclick="clickButton(0)">0</button>
+      <button class="fourth-row" onclick="clickButton('.')">.</button>
+      <button class="fourth-row" onclick="clickButton('=')">=</button>
       <button
         class="fourth-row"
         id="testOperator"
         onclick="testOperator()"
       ></button>
-      <button class="operator" onclick="display('+')">+</button>
-      <button class="operator" onclick="display('*')">*</button>
+      <button class="operator" onclick="clickButton('+')">+</button>
+      <button class="operator" onclick="clickButton('*')">*</button>
       <button class="operator" onclick="clearDisplay()">CLEAR</button>
     </div>
   </body>

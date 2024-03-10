@@ -73,7 +73,6 @@ function saveInput(input) {
 }
 
 function clearDisplay() {
-  showStatus();
   document.getElementById("display-wrapper").innerHTML = "";
   endProcess();
   showStatus();
